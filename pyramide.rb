@@ -1,11 +1,16 @@
 puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 print ">"
- nombre = Integer(gets.chomp)
- fixe = nombre
+ n = Integer(gets.chomp)
+ fixe = n
 puts "Voici la super pyramide !"
 diese = "#"
 space = "x"
-autre =
-(1..nombre).each do |nombre|
-  puts "#{space*(nombre)}" + "#{(fixe)*diese}"
+
+
+  (n-1).downto(0) do |n|
+  puts space*n
+end
+
+(1..(n-1)).each do |n|
+puts diese*n
 end
