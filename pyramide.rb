@@ -4,13 +4,13 @@ print ">"
  fixe = n
 puts "Voici la super pyramide !"
 diese = "#"
-space = "x"
+space = " "
 
 
-  (n-1).downto(0) do |n|
-  puts space*n
+  (n-1).downto(0) do |k|
+  puts "#{space*k}#{diese*(n-k)}"
 end
 
-(1..(n-1)).each do |n|
-puts diese*n
-end
+#(1..(n-1)).each do |n|
+#puts diese*n
+#end
